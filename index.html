@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="main.css">
+	<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+</head>
+<body>
+	<div class="to-center">
+		<h1>Click để bonk chéems</h1>
+		<div>
+			<div class="one"><img src="1.PNG" alt=""></div>
+			<div class="two"><img src="2.PNG" alt=""></div>
+		</div>
+
+		<button>Click</button>
+	</div>
+</body>
+<script>
+	$('button').click(function(){
+		$('.two').toggleClass('d-block');
+	});
+</script>
+</html>
