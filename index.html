@@ -9,18 +9,37 @@
 </head>
 <body>
 	<div class="to-center">
-		<h1>Click để bonk chéems</h1>
+		<h2>Click để bonk cheems</h2>
 		<div>
 			<div class="one"><img src="1.PNG" alt=""></div>
 			<div class="two"><img src="2.PNG" alt=""></div>
 		</div>
 
+		<br>
 		<button>Click</button>
+
 	</div>
 </body>
-<script>
+<script>	
+	function playAudio(url){
+		if (playAudio%2 != 0) {
+  		new Audio(url).play();}
+  	}
+
+  	var timesClicked = 0;
 	$('button').click(function(){
 		$('.two').toggleClass('d-block');
-	});
+
+		timesClicked++;
+
+		if(timesClicked %2 != 0){
+			playAudio('bonk.mp3');
+		}
+	});		
+
+
+		
+
+
 </script>
 </html>

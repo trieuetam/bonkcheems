@@ -3,6 +3,9 @@
 	color: white;
 }
 
+h2{
+	text-align: center;
+}
 .to-center{
 	position: absolute;
 	top: 50%;
@@ -21,7 +24,7 @@
 	width: 200px;
 	height: 200px;
 	position: absolute;
-	top: 57%;
+	top: 53%;
 	left: 50%;
 	transform: translate(-50%,-50%);
 	display: none;
@@ -37,9 +40,10 @@
 button{
 	display: flex;
 	margin: 0 auto;
+	padding: 5px 50px;
 }
 @media (max-width: 739px){
 	.two{
-		top: 62%;
+		top: 57%;	
 	}
 }
