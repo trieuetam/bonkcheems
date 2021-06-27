@@ -9,7 +9,7 @@
 </head>
 <body>
 	<div class="to-center">
-<p style="text-align: center;">Score: <a id="score">0</a> point</p>
+<p style="text-align: center;">Score: <a id="clicks">0</a> point</p>
 		<h2>Click để bonk cheems</h2>
 		<div>
 			<div class="one"><img src="1.PNG" alt=""></div>
@@ -17,7 +17,7 @@
 		</div>
 
 		<br>
-<button type="button" onclick="onClick()">Click me</button>
+<button type="button" onClick="onClick()">Click me</button>
 	</div>
 </body>
 <script>	
@@ -31,16 +31,18 @@
 		$('.two').toggleClass('d-block');
 
 		timesClicked++;
-	function onClick() {
+
 		if(timesClicked %2 != 0){
 			playAudio('bonk.mp3');
-			timesClicked+=1;
-			documment.getElementById("score").innerHTML = timesClicked;
 		}
-	};
 	});		
 
-
+var clicks = 0;
+function onClick() {
+  if(clicks %2 != 0)
+  clicks += 1;
+  document.getElementById("clicks").innerHTML = clicks;
+};
 
 </script>
 </html>
